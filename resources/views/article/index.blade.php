@@ -9,5 +9,6 @@
         <p class="p1"><span class="time"> @datetime($v->updated_at) </span></p>
     </div>
     @endforeach
+	{{ $list->links() }}
 </div>
 @endsection

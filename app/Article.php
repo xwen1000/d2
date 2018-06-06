@@ -9,7 +9,7 @@ class Article extends Model
     //
     public static function index()
     {
-    	$list = static::all();
+    	$list = static::simplePaginate(5);
     	return $list;
     }
     public static function show($id)
